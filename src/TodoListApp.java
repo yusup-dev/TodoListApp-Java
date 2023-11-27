@@ -12,7 +12,9 @@ public class TodoListApp {
      * Menampilkan todo list
      */
     public static void showTodoList() {
-        System.out.println("TODOLIST");
+        System.out.println("╔════════════════════════╗");
+        System.out.println("║       TODO LIST        ║");
+        System.out.println("╚════════════════════════╝");
         for (var i = 0; i < model.length; i++) {
             var todo = model[i];
             var no = i + 1;
@@ -130,10 +132,13 @@ public class TodoListApp {
         while (true) {
             showTodoList();
 
-            System.out.println("MENU : ");
-            System.out.println("1. Tambah");
-            System.out.println("2. Hapus");
-            System.out.println("x. Keluar");
+            System.out.println("╔═══════════════════════╗");
+            System.out.println("║       MENU :          ║");
+            System.out.println("╠═══════════════════════╣");
+            System.out.println("║  1. Tambah            ║");
+            System.out.println("║  2. Hapus             ║");
+            System.out.println("║  x. Keluar            ║");
+            System.out.println("╚═══════════════════════╝");
 
             var input = input("Pilih");
 
@@ -162,7 +167,9 @@ public class TodoListApp {
      * Menampilkan view menambahkan todo list
      */
     public static void viewAddTodoList() {
-        System.out.println("MENAMBAH TODOLIST");
+        System.out.println("╔══════════════════════════╗");
+        System.out.println("║   MENAMBAH TODOLIST      ║");
+        System.out.println("╚══════════════════════════╝");
 
         var todo = input("Todo (x Jika Batal)");
 
@@ -186,7 +193,9 @@ public class TodoListApp {
      * Menampilkan view menghapus todo list
      */
     public static void viewRemoveTodoList() {
-        System.out.println("MENGHAPUS TODOLIST");
+        System.out.println("╔══════════════════════════╗");
+        System.out.println("║  MENGHAPUS TODOLIST      ║");
+        System.out.println("╚══════════════════════════╝");
 
         var number = input("Nomor yang Dihapus (x Jika Batal)");
 
